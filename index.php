@@ -64,7 +64,8 @@ $captionArray = array(
     <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
 	<link rel="shortcut icon" type="image/x-icon" href="img/icon.png" />
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-	
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<script type="text/javascript">
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -76,49 +77,28 @@ $captionArray = array(
 	</script>
 </head>
 <body>
-	<div class="header">
-		<div class="icon"><img id="header_icon" src="img/icon.png" /></div>
-		<div class="title">Download New IP</div>
-		<div class="caption" title="<? echo $captionArray[array_rand($captionArray)]; ?>">Fast, Free, and Secure!</div>
+	<div class="jumbotron header whiteText">
+		<img class="headerIcn" src="img/icon.png"/>
+		<h1>Download New IP</h1>
+		<h2>Fast, Free, and Secure!</h2>
 	</div>
-	<div class="body_wrapper">
-		<div class="services_offered">
-			<h3>Services Offered</h3>
-			<ul>
-				<li><a href="#ip-cloak">IP Cloaking</a></li>
-				<li><a href="#id-prot">Identity Protection</a></li>
-				<li><a href="#unfiltered">Unfiltered Access</a></li>
-			</ul>
-			
-			<h3>User Testimonies</h3>
-			<div class="bubble_wrapper">
-<? echo $bubbleString; ?>
-			<a id="twitter_button" href="https://twitter.com/intent/tweet?button_hashtag=DownloadNewIP" class="twitter-hashtag-button" data-size="large">Tweet #DownloadNewIP</a>
-			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-			</div>
-			
-			<div class="ad_loc">
-				<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-				<ins class="adsbygoogle"
-					 style="display:inline-block;width:300px;height:600px"
-					 data-ad-client="ca-pub-5175658031507701"
-					 data-ad-slot="5019762567"></ins>
-				<script>
-				(adsbygoogle = window.adsbygoogle || []).push({});
-				</script>
-			</div>
-		</div>
-		<div class="blocks_wrapper">
+
+	<div class="container">
+		<div class="col-sm-8">
 		
-			<div class="block" id="top_block">
-				<h1>How Download New IP Works</h1>
-				<a name="top">Download New IP</a> provides state of the art privacy protection using advanced IP protocol. 
-				<br><br>
-				Our service has been designed from the ground up to be compatible with pre-existing built-in technology on either your computer or smartphone. Our service operates on the IP interface level, which means all of your applications will be secured.
-				<br><br>
-				<div class="quote">Instant activation with no installation required!</div>
-				<div class="download_btn">Download New IP!</div>
+			<h1>How Download New IP Works</h1>
+			<a name="top">Download New IP</a> provides state of the art privacy protection using advanced IP protocol. 
+			<br><br>
+			Our service has been designed from the ground up to be compatible with pre-existing built-in technology on either your computer or smartphone. Our service operates on the IP interface level, which means all of your applications will be secured.
+			<br><br>
+			<div class="well header">
+				<h2>Instant activation with no installation required!</h2>
 			</div>
+
+			<button class="btn btn-block btn-lg btn-info">
+				<i class="fa fa-cloud-download"></i> Download New IP!
+			</button>
+		
 			
 			<div class="block" id="ip-cloak_block">
 				<div class="title_box">
@@ -172,6 +152,32 @@ $captionArray = array(
 				<div class="download_btn">Download New IP!</div>
 			</div>
 		
+		</div>
+		<div class="col-sm-4">
+			<h3>Services Offered</h3>
+			<ul>
+				<li><a href="#ip-cloak"><i class="fa fa-check"></i> IP Cloaking</a></li>
+				<li><a href="#id-prot"><i class="fa fa-check"></i> Identity Protection</a></li>
+				<li><a href="#unfiltered"><i class="fa fa-check"></i> Unfiltered Access</a></li>
+			</ul>
+			
+			<h3>User Testimonies</h3>
+			<div class="bubble_wrapper">
+				<? echo $bubbleString; ?>
+			<a id="twitter_button" href="https://twitter.com/intent/tweet?button_hashtag=DownloadNewIP" class="twitter-hashtag-button" data-size="large">Tweet #DownloadNewIP</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+			</div>
+			
+			<div class="ad_loc">
+				<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+				<ins class="adsbygoogle"
+					 style="display:inline-block;width:300px;height:600px"
+					 data-ad-client="ca-pub-5175658031507701"
+					 data-ad-slot="5019762567"></ins>
+				<script>
+				(adsbygoogle = window.adsbygoogle || []).push({});
+				</script>
+			</div>
 		</div>
 	</div>
 	<div class="footer">

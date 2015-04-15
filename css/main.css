@@ -4,19 +4,14 @@ html, body {
 }
 
 .header {
-	width: 100%;
-	height: 300px;
 	text-align: center;
+	margin: 0 auto;
 	background-color: #00A3B0;
 	border-bottom: 8px solid #c3dee0;
-	margin: auto;
-	margin-top: 0;
-	position: relative;
 }
 
-.header .icon {
-	width: 100%;
-	height: 100px;
+.headerIcn {
+	height: 150px;
 	position: relative;
 	overflow: hidden;
 	text-align: center;
@@ -24,10 +19,10 @@ html, body {
 	margin-bottom: -15px;
 }
 
-.header .icon #header_icon {
-	height: 100%;
-	width: auto;
+.whiteText {
+	color: white;
 }
+
 
 .header .title {
 	width: 100%;
@@ -60,6 +55,9 @@ a {
 	color: #00A3B0;
 }
 
+li {
+	list-style-type: none;
+}
 
 .block a {
 	text-decoration: none;
